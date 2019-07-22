@@ -1,0 +1,16 @@
+<div id="wrapper">
+  <h3>下記の内容で送信する</h3>
+  <%= form_with(model: @blog, url: blogs_path, local: true) do |form|%>
+    <%= form.hidden_field :title %>
+    <%= form.hidden_field :content %>
+  <div class="blog clearfix">
+    <span>title</span>
+    <h3><%= @blog.title%></h3>
+    <span>content</span>
+    <div><%= @blog.content %></div>
+    <div class="buttons">
+      <%= form.submit "登録する" %>
+    </div>
+  </div>
+  <% end %>
+</div>

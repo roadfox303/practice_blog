@@ -1,0 +1,15 @@
+<div id="wrapper">
+  <%= form_with(model: @blog,url: confirm_blogs_path, local:true) do |form|%>
+  <p><%= notice %></p>
+  <div class="blog clearfix">
+    <span>title</span>
+    <h3><%= form.text_field :title, class:"blog_title" %></h3>
+    <span>content</span>
+    <%= form.text_area :content %>
+    <div class="buttons">
+      <%= form.submit %>
+    </div>
+  </div>
+  <% end %>
+  <%= link_to "ブログ一覧画面にもどる", blogs_path %>
+</div>

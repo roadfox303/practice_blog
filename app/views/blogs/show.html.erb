@@ -1,0 +1,10 @@
+<div id="wrapper">
+  <h1>ブログ確認</h1>
+  <p><%= notice %></p>
+  <div class="blog clearfix">
+    <div><span class="blog_id"><%= @blog.id %></span><span class="blog_date"><%= @blog.created_at.strftime("%Y-%m-%d %H:%M") %></span></div>
+    <h3><%= @blog.title %></h3>
+    <p><%= @blog.content %></p>
+  </div>
+  <%= link_to 'ブログ一覧に戻る', blogs_path %>
+</div>

@@ -1,0 +1,17 @@
+<%= form_with(model:@blog, local:true) do |form| %>
+<div id="wrapper">
+  <h1>ブログ編集</h1>
+  <p><%= notice %></p>
+  <div class="blog clearfix">
+    <div class="clearfix"><span class="blog_id"><%= @blog.id %></span><span class="blog_date"><%= @blog.created_at.strftime("%Y-%m-%d %H:%M") %></span>
+    </div>
+    <span>Title</span>
+    <h3><%= form.text_field :title, class:"blog_title" %></h3>
+    <span>Content</span>
+    <%= form.text_area :content %>
+    <div class="buttons">
+      <%= form.submit %>
+    </div>
+  </div>
+</div>
+<% end %>

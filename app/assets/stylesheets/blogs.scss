@@ -1,0 +1,90 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background:#cccccc;
+}
+#wrapper {
+  width:480px;
+  margin: 0 auto;
+}
+.blog {
+  width: 100%;
+  background: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  clear: both;
+  box-shadow: 5px 5px 5px #bbbbbb;
+  border-top: solid 5px #0059b3;
+}
+.blog_id {
+  float: left;
+  display: block;
+  color: #cccccc;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.blog_date {
+  float: right;
+  display: block;
+  padding-right: 5px;
+  color: #cccccc;
+}
+.blog h3 {
+  display: block;
+  clear: both;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+.blog p,.blog textarea {
+  padding: 10px;
+  background: #f9f9f9;
+  border: solid 1px #eeeeee;
+  margin: 0 0 10px;
+}
+.buttons {
+  display: block;
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.buttons a {
+  display: block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  float: left;
+  background: #fff;
+  color: #333333;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.buttons a:last-child{
+  float: right;
+  margin-right: 0;
+  color:#dd0000;
+}
+.buttons a:hover{
+  background: #b9eff8;
+}
+.blog .blog_title{
+  display: block;
+  width:100%;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  border: solid 1px #eeeeee;
+}
+.blog textarea{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
